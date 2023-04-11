@@ -40,7 +40,7 @@ function Header() {
         className="header__mobile_menu_btn"
         onClick={() => setIsOpen(true)}
       >
-        <GiHamburgerMenu size="35px"></GiHamburgerMenu>
+        <GiHamburgerMenu size="35px" fill="black"></GiHamburgerMenu>
       </button>
       <div className="header__pc-menu">{headerContent}</div>
     </header>
