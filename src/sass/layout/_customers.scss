@@ -43,6 +43,9 @@
     position: relative;
     display: inline-block;
 
+    @media screen and (max-width: $phone) {
+        width: 100%;
+    }
 
     >input {
 
@@ -61,6 +64,8 @@
         @media screen and (max-width: $phone) {
             width: 100%;
         }
+
+
     }
 
     >svg {
