@@ -117,10 +117,17 @@ tbody {
 }
 
 .customers__pagination_wrapper {
-    @include flex
+    @media screen and (min-width: $phone) {
+        @include flex;
+    }
 }
 
 .customers__pagination_info {
+    @media screen and (max-width: $phone) {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
     font-size: 14px;
     color: map-get($colors, secondary_text);
 }

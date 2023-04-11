@@ -3,12 +3,11 @@
         @include flex();
         flex-direction: row;
         max-width: 100%;
-        height: auto;
         padding: 15px 20px 15px 20px;
+        min-height: auto;
 
     }
 
-    box-sizing: border-box;
     min-height: 100vh;
     max-width: 306px;
     padding: 36px 28px 76px 28px;
