@@ -1,0 +1,149 @@
+.customers {
+    background-color: map-get($colors, background);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: $box-shadow;
+
+    @media screen and (min-width: $pc) {
+        width: 968px;
+        padding: 30px 44px 40px 38px;
+    }
+
+    table {
+        margin-bottom: 30px;
+    }
+}
+
+.customers__head_wrapper {
+    @media screen and (min-width: $pc) {
+        @include flex();
+    }
+
+    margin-bottom: 40px;
+}
+
+.customers__header {
+    color: map-get($colors, primary_text);
+    margin-bottom: 7px;
+}
+
+.customers__active_members {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #16C098;
+
+    @media screen and (max-width: $phone) {
+        margin-bottom: 15px;
+    }
+}
+
+
+.customers__input_wrapper {
+    position: relative;
+    display: inline-block;
+
+
+    >input {
+
+        border: none;
+        outline: none;
+        background-color: #F9FBFF;
+        padding: 10px 20px 10px 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        width: 216px;
+        color: map-get($colors, secondary_text);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+
+        @media screen and (max-width: $phone) {
+            width: 100%;
+        }
+    }
+
+    >svg {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.customers__table_head {
+    font-size: 14px;
+    line-height: 21px;
+    color: #B5B7C0;
+
+    th {
+        text-align: left;
+        font-weight: 500;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #EEEEEE;
+
+    }
+}
+
+tbody {
+    td {
+        font-size: 14px;
+        line-height: 21px;
+        color: map-get($colors , table_text);
+        border-bottom: 1px solid #EEEEEE;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+.customers__status {
+    @include flex(center);
+    width: 80px;
+    height: 29px;
+    border-radius: 4px;
+}
+
+.customers__status--active {
+    color: map-get($colors, active_text);
+    background: rgba(22, 192, 152, 0.38);
+    border: 1px solid #00B087;
+}
+
+.customers__status--inactive {
+    color: map-get($colors, inactive_text);
+    background: #FFC5C5;
+    border: 1px solid #DF0404;
+}
+
+.customers__pagination_wrapper {
+    @include flex
+}
+
+.customers__pagination_info {
+    font-size: 14px;
+    color: map-get($colors, secondary_text);
+}
+
+.customers__btn_wrapper {
+    @include flex(center);
+    gap: 12px;
+}
+
+.customers__pagination_btn {
+    font-size: 12px;
+    font-weight: 500;
+    color: #404B52;
+    width: 24px;
+    height: 24px;
+    background-color: #F5F5F5;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    padding: 0;
+
+    &:hover {
+        color: #FFFFFF;
+        background-color: #5932EA;
+        border: 1px solid #5932EA;
+    }
+}

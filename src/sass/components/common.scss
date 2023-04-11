@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.body_container {
+    background-color: #FAFBFF;
+
+    @media screen and (min-width: $phone) {
+        display: flex;
+    }
+}
+
+.main_container {
+    padding: 30px 15px 15px 15px;
+
+    @media screen and (min-width: $pc) {
+        padding: 41px 95px 40px 71px;
+
+
+    }
+}
